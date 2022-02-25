@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:padding="25dp"
+	tools:context=".MainActivity">
+
+	<RelativeLayout
+		android:id="@+id/mainTing"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:visibility="visible">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="80dp"
+			android:layout_marginTop="104dp"
+			android:text="Voltage"
+			android:textSize="24dp"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent"
+			app:layout_constraintVertical_bias="0.019" />
+
+		<EditText
+			android:id="@+id/voltage"
+			android:layout_width="207dp"
+			android:layout_height="50dp"
+			android:layout_marginStart="80dp"
+			android:layout_marginTop="140dp"
+			android:layout_weight="0.5"
+			android:hint="Enter Voltage"
+			android:inputType="number"></EditText>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="80dp"
+			android:layout_marginTop="220dp"
+			android:text="Current"
+			android:textSize="24dp"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent"
+			app:layout_constraintVertical_bias="0.019" />
+
+		<EditText
+			android:id="@+id/current"
+			android:layout_width="207dp"
+			android:layout_height="50dp"
+			android:layout_marginStart="80dp"
+			android:layout_marginTop="250dp"
+			android:layout_weight="0.5"
+			android:hint="Enter Current"
+			android:inputType="number"></EditText>
+
+		<Button
+			android:id="@+id/calculateresistance"
+			android:layout_width="150dp"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="80dp"
+			android:layout_marginTop="330dp"
+			android:onClick="calculate"
+			android:text="Calculate Resistance"
+			tools:ignore="OnClick" />
+
+
+		<TextView
+			android:id="@+id/res"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="80dp"
+			android:layout_marginTop="400dp"
+			android:text="Resistance"
+			android:textSize="24dp"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent"
+			app:layout_constraintVertical_bias="0.019" />
+
+		<TextView
+			android:id="@+id/finalResistance"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="24dp"
+			android:layout_marginStart="80dp"
+			android:layout_marginTop="430dp"
+			android:hint="0"
+			android:inputType="none"></TextView>
+
+
+	</RelativeLayout>
+
+</RelativeLayout>

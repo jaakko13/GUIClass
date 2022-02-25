@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:padding="25dp"
+	tools:context=".MainActivity">
+
+	<RelativeLayout
+		android:id="@+id/mainTing"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:visibility="visible">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="80dp"
+			android:layout_marginTop="104dp"
+			android:text="Choose Function"
+			android:textSize="30dp"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent"
+			app:layout_constraintVertical_bias="0.019" />
+
+		<Button
+			android:id="@+id/resistance"
+			android:layout_width="150dp"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="80dp"
+			android:layout_marginTop="140dp"
+			android:text="Calculate Resistance" />
+
+		<Button
+			android:id="@+id/voltage"
+			android:layout_width="150dp"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="80dp"
+			android:layout_marginTop="190dp"
+			android:text="Calculate Voltage" />
+
+		<Button
+			android:id="@+id/current"
+			android:layout_width="150dp"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="80dp"
+			android:layout_marginTop="240dp"
+			android:text="Calculate Current" />
+
+		<Button
+			android:id="@+id/close"
+			android:layout_width="150dp"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="80dp"
+			android:layout_marginTop="290dp"
+			android:text="Close Calculator" />
+
+	</RelativeLayout>
+
+</RelativeLayout>

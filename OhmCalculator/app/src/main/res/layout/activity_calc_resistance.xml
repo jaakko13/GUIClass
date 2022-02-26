@@ -6,7 +6,7 @@
 	android:layout_height="match_parent"
 	android:orientation="vertical"
 	android:padding="25dp"
-	tools:context=".MainActivity">
+	tools:context=".CalcResistance">
 
 	<RelativeLayout
 		android:id="@+id/mainTing"
@@ -33,7 +33,7 @@
 			android:layout_marginTop="140dp"
 			android:layout_weight="0.5"
 			android:hint="Enter Voltage"
-			android:inputType="number"></EditText>
+			android:inputType="numberDecimal"></EditText>
 
 		<TextView
 			android:layout_width="wrap_content"
@@ -54,7 +54,7 @@
 			android:layout_marginTop="250dp"
 			android:layout_weight="0.5"
 			android:hint="Enter Current"
-			android:inputType="number"></EditText>
+			android:inputType="numberDecimal"></EditText>
 
 		<Button
 			android:id="@+id/calculateresistance"
@@ -83,11 +83,11 @@
 			android:id="@+id/finalResistance"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:textSize="24dp"
 			android:layout_marginStart="80dp"
 			android:layout_marginTop="430dp"
 			android:hint="0"
-			android:inputType="none"></TextView>
+			android:inputType="none"
+			android:textSize="24dp"></TextView>
 
 
 	</RelativeLayout>

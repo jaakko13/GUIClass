@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/javi0/Documents/graphicalUI/GUIClass/OhmCalculator/app/src/main/res/layout/activity_calc_current.xml" value="0.2" />
         <entry key="..\:/Users/javi0/Documents/graphicalUI/GUIClass/OhmCalculator/app/src/main/res/layout/activity_calc_resistance.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/javi0/Documents/graphicalUI/GUIClass/OhmCalculator/app/src/main/res/layout/activity_calc_voltage.xml" value="0.11302083333333333" />
         <entry key="..\:/Users/javi0/Documents/graphicalUI/GUIClass/OhmCalculator/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
       </map>
     </option>

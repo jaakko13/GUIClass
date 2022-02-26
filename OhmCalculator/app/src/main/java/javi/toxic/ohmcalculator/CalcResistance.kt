@@ -27,15 +27,20 @@ class CalcResistance : AppCompatActivity() {
         res = findViewById(R.id.res)
 
         calculateresistance.setOnClickListener{
-            var calcVoltage = voltage.text.toString().toDouble()
-            var calcCurrent = current.text.toString().toDouble()
+            var calcVoltage = voltage.text.toString().toDoubleOrNull()
+            var calcCurrent = current.text.toString().toDoubleOrNull()
 
-            if(calcCurrent == 0.0){
-                Toast.makeText(this, "Current Cannot be zero!", Toast.LENGTH_SHORT).show()
+            if(calcVoltage == null || calcCurrent == null){
+                Toast.makeText(this, "Enter a Value!", Toast.LENGTH_SHORT).show()
             }
             else{
-                var finalRes: Double = calcVoltage/calcCurrent;
-                finalResistance.text = finalRes.toString();
+                if(calcCurrent!! <= 0.0){
+                    Toast.makeText(this, "Resistance must be a positive value!", Toast.LENGTH_SHORT).show()
+                }
+                else{
+                    var finalCur: Double = calcVoltage!! / calcCurrent!!;
+                    finalResistance.text = finalCur.toString();
+                }
             }
         }
     }
